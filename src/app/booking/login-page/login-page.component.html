@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link href="login-page.component.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="assets/logo.png" height="28" style="width:30px;" alt="CoolBrand">
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" style="font-size: large; font-weight: bold;">Wissen Airlines</a>
+          <a routerLink="/" class="nav-item nav-link">Home</a>
+          <a routerLink="/contact" class="nav-item nav-link">Contact Us</a>
+          <a routerLink="/about" class="nav-item nav-link">About Us</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a routerLink="/book" class="nav-item nav-link">Book Flight</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url(../assets/login.jpg);"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container" style="background-image: linear-gradient(#e66465, #9198e5);">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3>Login to <strong>Book Flight</strong></h3>
+            <p class="mb-4">Book Your Flight and Leave the rest to us.</p>
+      
+            <div class="form-group first" style="background-color: white;">
+              <label for="username">Username</label>
+              <input type="email" class="form-control" placeholder="Username" id="email"
+                [(ngModel)]="loginObj.email" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="form-group last mb-3" style="background-color: white;">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" placeholder="Your Password" id="password"
+                [(ngModel)]="loginObj.password" [ngModelOptions]="{standalone: true}">
+            </div>
+
+            <div class="d-flex mb-5 align-items-center">
+              <span class="ml-auto"><a style="margin-top:10px ; color: black;" routerLink="/book/signup">New User? click
+                  to signup</a></span>
+            </div>
+
+            <button class="btn btn-block btn-dark" (click)="logins()">Login</button>
+            <!-- {{loginStatus}} -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

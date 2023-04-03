@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.component.css">
+    <style>
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .youth {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/logo.png" height="28" style="width:30px;" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" style="font-size: large; font-weight: bold;">Wissen
+                            Airlines</a>
+                        <a routerLink="/" class="nav-item nav-link">Home</a>
+                        <a routerLink="/contact" class="nav-item nav-link">Contact Us</a>
+                        <a routerLink="/about" class="nav-item nav-link">About Us</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a routerLink="/book" class="nav-item nav-link">Book Flight</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid" style="position: relative;
+        text-align: center;
+        color: white;">
+        <img src="../assets/about.jpg" alt="Snow" style="width:100%;">
+        <div class="centered">
+            <h1>About Us</h1>
+            <p style="font-size: larger;">Wissen Airlines connects the world to, and through, our global hub in
+                Banglore.
+                We operate modern, efficient and
+                comfortable aircraft, and our culturally diverse workforce delivers award-winning services to our
+                customers across six continents every day.</p>
+        </div>
+    </div>
+
+    <div class="container text-center youth">
+        <h1>Why Us?</h1>
+    </div>
+
+    <!--Why US?-->
+    <div class="container my-4 pd-3">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading"> Our People <span class="text-muted">It’ll blow
+                        your
+                        mind.</span></h2>
+                <p class="lead">Our talented and dedicated workforce joined us from over 160 nations from around the
+                    world, bringing their expertise and diverse experiences to deliver the best products and services
+                    for our global customer base.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="../assets/logo1.webp" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">100% Transparency <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">We believe in transparency for any service, and therefore we charge a small service fee
+                    and no other hidden commissions or charges from the travelers..</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="../assets/logo-2.jpeg" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">24/7 Live Concierge <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">We understand that traveling can not be perfect and thus, we offer 24/7 on-chat and
+                    on-call support service throughout the travel experience.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="../assets/logo-3.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Our Planet <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">As part of our commitment to looking after our planet, we operate one of the most modern
+                    and efficient aircraft fleets in the sky. We are actively working on ways to reduce resource
+                    consumption, while investing in conservation and wildlife protection.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="../assets/logo-4.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+
+
+</body>
+
+</html>

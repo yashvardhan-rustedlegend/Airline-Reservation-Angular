@@ -1,0 +1,22 @@
+
+img{
+    width: 100%;
+  }
+  
+  
+  ngb-carousel .wrapper {
+      position: relative;
+      height: 0;
+      padding-top: 55%; /* Keep ratio for 1200x500 images  900*500 resolution */
+    }
+    ngb-carousel .wrapper>img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    /* //
+    steps 
+    1.service.ts--> {imgur:"",caardname:""},{}
+    ngfor html use krke display carousel */

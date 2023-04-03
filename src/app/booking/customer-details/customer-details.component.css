@@ -1,0 +1,15 @@
+
+    
+    .bg-indigo {
+   
+    background: rgb(9,45,121);
+    background: linear-gradient(90deg, rgba(9,45,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
